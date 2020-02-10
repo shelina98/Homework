@@ -1,0 +1,108 @@
+<html>
+<head> 
+<style>
+
+  body  { background-image: url("background.png"); 
+        background-size:cover;
+        margin:0px;}
+		
+		
+#koka     { list-style-type: none;
+               margin-top: 10px;
+                   padding: 0;
+                 overflow: hidden; 
+              background-color: #333;}
+			  
+ #Emri { font-family:helvetica;
+          color:yellow;
+          float:left;
+		  margin:5px;
+          font-size:32px;}
+
+ #koka li {  float: right;}
+
+li input {   display: block;
+             padding: 14px 16px;
+            text-decoration: none;}
+
+.button { background-color:red;
+              border-color:red;
+		        font-size:16px;
+				color:white;}
+		   	   
+.button:hover  {color:gray;}
+
+    #quote { position:fixed;
+            bottom: 0;
+             right: 0; 
+			 background-color:#333}	
+	#contact {
+	       position:fixed;
+            bottom: 0;
+             left: 0;        
+			 width:10%;}		
+    #copyright {  position:fixed;
+	              bottom:0;
+				  left:10%;
+				  color:white;
+				  background-color: red;
+		}			 
+			 
+		   
+ #searchbox {     font-family:helvetica;
+                  color:black;
+				  text-align:left;
+				  position:fixed;
+				  margin:250px;
+				  padding-top:30;
+				  padding-bottom:30;
+				  padding-left:50;
+				 
+			}
+	
+	
+	
+	
+p {font-family:helvetica;
+    color:yellow;
+   font-weight:bold; }					   
+					  
+a    {  color:white;
+		text-decoration:none;
+		font-family:helvetica;}
+		
+a:hover {color:gray;}
+
+#welcome   {  color:white;
+			 font-size:30px;
+			 position:center;
+			 background-color:gray;
+			} 
+</style>
+</head>
+
+<body>
+
+
+<ul id="koka">
+
+<p id="Emri"> Cinephiles spot </p>
+
+<li>  <input class="button" type="button" id="hyrbutton" value="Log in" > </input> </li>
+<li> <input class="button" type="button" id="Rbutton" value="Sign up" > </input> </li>
+<li> <input class="button" type="button" id="Hbutton" value="Home"> </input></li>
+             
+</ul>
+
+<p id="welcome"> Welcome to our review site! Review your favourite movie,Now. </p>
+
+<input type="search" id="searchbox" placeholder="Search movie..."> </input> 
+
+ 
+ <p id="contact" > <a href=" mailto:Shela.Veliu@fti.edu.al" > Contact </a>  </p>
+ <p id="copyright"> Copyright &copy Shela Veliu. All rights reserved. </p> 
+ <p id="quote"> Cinema is the ultimate pervert art. It doesn't give you what you desire - it tells you how to desire.</p>  
+  
+
+</body>
+</html>

@@ -6,7 +6,7 @@
 	 <body>
 
 		 <h1>Login Form</h1>
- <p>Please fill in all fields and click Log in.</p>
+ <p>Please fill in the fields and click Log in.</p>
 
 <form method="post" action="Login.php">
 
@@ -20,7 +20,7 @@
  <div><label>Password</label>
  <input type = "Password" name = "Password" required></div>
           
-<p><input type = "submit" name = "submit" value = "Log in"></p>
+<p> <input type = "submit" name = "submit" value = "Log in"> </p>
 </form>
 
 	</body>

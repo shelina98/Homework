@@ -1,28 +1,76 @@
+<?php
+
+require_once('config.php');
+if(isset($_POST['submit']))
+{
+   $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  $qLogin = "SELECT * FROM users 
+               WHERE Username = '$username' and Password = '$password'" ;
+
+  if($result = mysqli_query ($database,$qLogin))
+  {
+    if(mysqli_num_rows($result) == 1 )
+    {
+      session_start();
+      $_SESSION['username'] = $username;
+      header('location: prove1.php');
+
+    }
+    else echo "Kredenciale te gabuara";
+  }
+}
+
+?>
+
+
 <html>
 <head>
-<style type = "text/css">
-    label { width: 5em; float: left; }
- </style>
-	 <body>
+    <link href="style.css" rel="stylesheet" type="text/css">
 
-		 <h1>Login Form</h1>
- <p>Please fill in the fields and click Log in.</p>
+<style type = "text/css">
+        body {maring:50% ;}
+    label { width: 5em; float: center; }
+
+    #forma {  position: fixed;
+              float: center;
+              margin-left: 300px;
+        background-color: white;
+        opacity: 0.95;
+        }
+ </style>
+ 
+     <body>
+
+        <?php
+        require_once('navigationbar.php');
+          ?>
+<div id="forma">
+
+         <h1>Login Form</h1>
+ <p style="color: red">Please fill in all fields and Login.</p>
 
 <form method="post" action="Login.php">
 
-	<h2>User Information</h2>
+    <h2>User Credentials</h2>
 
  <!-- create four text boxes for user input -->
 
  <div><label>Username:</label>
- <input type = "text" name = "uname" required></div>
-
+ <input type = "text" name = "username" required> </div>
  <div><label>Password</label>
- <input type = "Password" name = "Password" required></div>
-          
-<p> <input type = "submit" name = "submit" value = "Log in"> </p>
-</form>
+ <input type = "Password" name = "password" required></div>
 
-	</body>
+          
+<p> <input type = "submit" name = "submit" value = "Register"></p>
+</form> </div>
+
+
+<?php
+        require_once('footer');
+     ?>
+
+</body>
 </head>
 </html>

@@ -1,0 +1,107 @@
+body  { background-image: url("background.png"); 
+        background-size:cover;
+        margin:0px;}
+    
+     
+#koka     { list-style-type: none;
+               margin-top: 10px;
+                   padding: 0;
+                 overflow: hidden; 
+              background-color: #333;}
+        
+ #Emri { font-family:helvetica;
+          color:yellow;
+          float:left;
+      margin:5px;
+          font-size:32px;}
+
+ #koka li {  float: right;}
+
+li a      {   display: block;
+             padding: 14px 16px;
+            text-decoration: none;}
+
+.button     { 
+              border-color:red;
+
+            font-size:30px;
+
+        color:red; }
+           
+.button:hover  {color:gray;}
+
+    #quote { position:fixed;
+            bottom: 0;
+             right: 0; 
+       background-color:#333} 
+
+  #contact {
+         position:fixed;
+            bottom: 0;
+             left: 0;        
+       width:10%;}    
+
+    #copyright {  position:fixed;
+                bottom:0;
+          left:10%;
+          color:white;
+          background-color: red;
+    }      
+       
+       
+ #searchbox { font-family:helvetica;
+              width: 250px;
+              height: 32px;
+              border-radius: 7px;
+              display: inline;
+              position: fixed;
+            left: 30%;
+            top: 4%;
+           }
+  
+  
+           
+            
+a    {  color:white;
+    text-decoration:none;
+    font-family:helvetica;}
+    
+a:hover {color:gray;}
+
+#welcome  
+      {  color:white;
+       font-size:30px;
+       position:center;
+       background-color:gray;
+      } 
+
+
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {     /* linqet e kategorive*/
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+p {font-weight: bold;}
+
+.dropdown-content a:hover {background-color:gray;
+                                                  }    /*hover link kategorite*/
+
+.dropdown:hover .dropdown-content {
+  display: block; }
